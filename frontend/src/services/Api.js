@@ -2,14 +2,6 @@ import axios from "axios";
 
 const API_URL = "http://localhost:8080";
 
-/*export const initializeDatabase = async () => {
-  try {
-    return await axios.get(`${API_URL}/initialize`);
-  } catch (error) {
-    console.error("Error initializing database:", error);
-    throw error;
-  }
-};*/
 
 export const getProducts = async () => {
   try {
