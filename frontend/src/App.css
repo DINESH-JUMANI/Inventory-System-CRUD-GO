@@ -1,0 +1,183 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #2d2d2d;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.left-section,
+.right-section {
+  width: 48%;
+  padding: 15px;
+}
+
+.add-product-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.add-product-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input,
+button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.submit-button {
+  width: 100%;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  width: 80%;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0b7dda;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #da190b;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+td {
+  background-color: #2d2d2d;
+  vertical-align: middle;
+}
+
+tr {
+  transition: background-color 0.3s ease;
+}
+
+tr:hover td {
+  background-color: #3f3f3f;
+}
+
+th,
+td {
+  width: calc(100% / 6);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pagination button:hover,
+.pagination button.active {
+  background-color: #4CAF50;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
